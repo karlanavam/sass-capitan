@@ -1,0 +1,9 @@
+@function grid($num, $cols:12){
+    @return percentage($num / $cols);
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: grid($i);
+    }
+}
