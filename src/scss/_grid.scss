@@ -1,9 +1,42 @@
-@function grid($num, $cols:12){
-    @return percentage($num / $cols);
-}
+@import '_variables';
+@import '_mixin';
 
-@for $i from 1 through 12 {
-    .col-#{$i}{
-        width: grid($i);
+@media screen and (max-width: 500px) {    
+    @function grid($num, $cols:12){
+        @return percentage($num / $cols);
     }
+
+    @for $i from 1 through 12 {
+        .small-#{$i}{
+            width: grid($i);
+        }
+    } 
+  }
+
+@media screen and (min-width: 768px - 1) {    
+    @function grid($num, $cols:12){
+        @return percentage($num / $cols);
+    }
+
+    @for $i from 1 through 12 {
+        .medium-#{$i}{
+            width: grid($i);
+        }
+    } 
+  }
+
+@media screen and (min-width: 1024px) {    
+    @function grid($num, $cols:12){
+        @return percentage($num / $cols);
+    }
+
+    @for $i from 1 through 12 {
+        .large-#{$i}{
+            width: grid($i);
+        }
+    } 
+  }
+
+.row {
+    width: $container-width;
 }
