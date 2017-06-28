@@ -3,7 +3,7 @@ var cargarPagina = function () {
 }
 
 var cargarAlumnas = function() {
-    var url = 'http://laboratoria.cuadra.co:9339/api/v1/students/';
+    var url = 'https://laboratoria.cuadra.co/api/v1/students/';
      $.getJSON(url, function (response) {
 
          var nombre = response;
