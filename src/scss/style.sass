@@ -1,0 +1,77 @@
+@import _grid
+@import _variables
+@import _mixin
+
+body
+  margin: $margin-cero
+  padding: $padding-cero
+
+.container
+  width: $container-width
+
+#titulo
+  background: $container-background
+  color: $title-color
+  font: $title-font
+  margin: $margin-cero
+  padding: $padding-t-b
+
+  h1
+    padding: $margin-l-r
+
+#contenedor-secciones
+  width: $container-width
+
+#lista
+  margin: $margin-cero
+  padding: $padding-cero
+  display: $display-inlineblock
+  float: left
+  clear: left
+
+  ul
+    margin: $margin-cero
+    padding: $padding-cero
+
+    li
+      background: $miniconatiner-background
+      font: white
+      margin: 2% 0
+      list-style: none
+      padding: $padding-dos
+      color: $title-color
+      font: $paragraph-size
+
+    li:hover
+      background: $container-background
+      cursor: pointer
+
+#ejercicio
+  display: $display-inlineblock
+  padding-left: $padding-uno
+
+  h1
+    font: $title-font-ejercicio
+
+  font: $title-font
+
+#deberes
+  display: $display-inlineblock
+  background: $miniconatiner-background
+  color: $title-color
+  float: right
+  clear: right
+
+  div.aside
+    text-align: center
+    font: $subtitle-font
+    color: white
+
+#footer
+  background: $miniconatiner-background
+  display: $display-inlineblock
+
+  p
+    color: $title-color
+    font: $paragraph-size
+    text-align: center
